@@ -1,0 +1,35 @@
+Objetivos:
+
+1. mejores programadores (game developers)
+2. mejor portfolio
+
+[PARA VER]
+Dictionaries
+Canvas, world space.
+Nav Mesh
+Proc gen
+Custom editor
+Load Additive
+como manejar la pausa
+Bitwise operations
+Pausa en el Input Manager, nuevo
+Actions & Funcs
+Timeline
+LINQ
+LODs
+
+[Todo ok con]
+Clases, Generics, OOP, Dictionaries
+Colliders, Rigs, Physiscs Material
+
+[Proxima]
+Traigan cosas para ver.
+
+1162667575
+
+
+Setings
+Options del juego.
+
+mvp, mvc
+Scriptable Objects

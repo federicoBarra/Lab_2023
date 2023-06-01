@@ -1,0 +1,37 @@
+[PARA VER]
+DONE Summaries, comment data.
+DONE Doc generation.
+DONE XML, JSON, YAML
+DONE Custom editor
+DONE #if def
+
+Dictionaries
+Canvas, world space.
+Nav Mesh
+Proc gen
+Load Additive
+como manejar la pausa
+Pausa en el Input Manager, nuevo
+Actions & Funcs
+NO Timeline
+LINQ
+LODs
+Bitwise operations
+BezierCurves
+AnimationEvents
+KISS
+Builds
+MonoSingleton
+
+https://docs.unity3d.com/Manual/editor-CustomEditors.html
+
+https://github.com/Rojoin/ProjectToTheMoon
+
+
+Ejercicio de CustomEditor con json y serializaciones.
+Hacer Script que 
+	En el inspector muestra 2 botones, Save y Load.
+	guarda y carga (mediante esos botones) en disco la informacion de un player en formato json.
+	Todo esto en editor sin estar en modo Play
+
+

@@ -1,0 +1,67 @@
+[Primero que nada]
+3 screnshoot de sus juegos
+drive: 
+https://drive.google.com/drive/folders/1frtmSVa3J_pyJahsftpRV3X6qx3RyxC2?usp=sharing
+
+[PARA VER]
+Dictionaries
+Canvas, world space.
+UI RectTranform
+Nav Mesh
+Proc gen
+Load Additive
+como manejar la pausa
+Pausa en el Input Manager, nuevo
+Actions & Funcs
+LINQ
+LODs
+Bitwise operations
+BezierCurves / Splines
+AnimationEvents
+KISS
+Builds
+MonoSingleton
+CHEATS
+Escenas autocorribles
+ParticleSystem desde codigo
+
+DONE Claro donde empieza la cosa en las escenas
+DONE Early exit
+DONE UI 9grid en unity
+DONE Coding Standards
+http://www.sourceformat.com/pdf/cs-coding-standard-hunt.pdf
+
+[Proyecto ignasio arrastua]
+
+Properties
+ScriptableObjects (EnemyMovementPatternConfig)
+
+Diseño
+Cosas de referencia espacial en el nivel. Planetas? Battlecruiser?
+
+Que fallas en gameplay le encontrás?
+
+El Score en el PlayerController
+
+PlayerController::OnTriggerEnter
+
+Ejercicio
+	Un script, que genere un nivel de x por y de cubos
+	Pasa en el start de la escena
+	El codigo tiene que entrar en una screnshoot
+	subir a drive el script screenshoteado
+
+Instantiate
+
+1. Nombre real en drive
+2. Importancia absoluta de nombres de cosas. Escenas, carpetas, variables, métodos, clases
+
+
+casey muratori
+
+
+
+
+
+
+
