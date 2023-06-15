@@ -1,0 +1,169 @@
+https://github.com/federicoBarra/Lab_2023
+
+Diferencia entre OverlapSphereNonAlloc
+	y 				sPhereCastNonalloc
+
+Buscar Wheel Collider explination
+
+[Primero que nada]
+Unity abierto desde vamos.
+
+Preguntas ejercicio clase anterior
+Para los que vieron Unity, poner en contacto con gestione educativa.
+	Bajar Unity.
+
+
+make your code usable before you try to make it reusable
+premature reutilization is the root of all evil
+
+casey muratori (SOLID)
+
+[Ejercicio]
+Tengo 2 clases
+Player y Enemy
+
+Player debe poder pegar con cualquier boton y Enemy y solo Enemy recibirá daño.
+Las clases Player y Enemy no se conocen.
+
+No se pueden usar tags
+No se puede usar ontrigger oncollition y esas cosas.
+
+hero task: El player pega en un radio y angulo definido en el editor
+
+
+[PARA VER]
+Dictionaries
+Canvas, world space.
+UI RectTranform
+Nav Mesh
+Proc gen
+Load Additive
+como manejar la pausa
+Pausa en el Input Manager, nuevo
+Actions & Funcs
+LINQ
+LODs
+BezierCurves / Splines
+AnimationEvents
+KISS
+Builds
+MonoSingleton
+CHEATS
+Escenas autocorribles
+ParticleSystem desde codigo
+Strategy Pattern
+
+Dario 
+	Ver collisiones locas
+
+
+[Coletta project]
+Orden en las escenas
+Orden del proyecto
+Post-Process
+Scroll_Track (naming conventions, )
+Enemy que ataca a otro Enemy
+Vieron FSM?
+
+[Alumnos]
+
+Práctica Profesional II: Desarrollo de videojuegos II 
+X = Ver que proyecto hacer
+
+Posibilidades:
+siempre 3D
+
+FPS basico
+Shooting Gallery
+Naves (1942)
+Bomberman
+Mega Man Battle Network
+Zelda !!BASICO!!
+
+Juan Pablo Campos
+	No Unity
+	X
+Ivan Abraham
+	No Unity
+	X
+
+Daniela Leticia Gonzalez
+	NO Desarrolo 2
+	X
+Lucio Molina Jalabert
+	NO Desarrolo 2
+	X
+Jose Altamirano
+	Programacion 2
+	X
+Joan Manuel Rivas Cepeda
+	Prog 1
+	DB
+	Graphics
+	X
+Estanislao Sala Barraquero
+	Programacion 2 
+	X
+	
+Manuel D Antuono
+	Práctica Profesional II: Desarrollo de videojuegos II 
+	Pedir Repo
+	(FPS)
+
+Mateo Fabbri
+	Práctica Profesional II: Desarrollo de videojuegos II 
+	Unreal
+	Pedir Repo
+	(shooting gallery)
+	
+Ignacio Arrastua
+	Práctica Profesional II: Desarrollo de videojuegos II 
+	To The Moon (Naves)
+
+Santiago Barra
+	Práctica Profesional II: Desarrollo de videojuegos II 
+	NoName (shooting gallery)
+	https://github.com/BarraSantiago/Desarrollo2_TP1
+
+Enzo Coletta
+	Práctica Profesional II: Desarrollo de videojuegos II 
+	Grand Tanker Master (TANQUES)
+	https://github.com/BiscupidTea/Project-Tank
+	Ver clase que viene.
+
+Tobias Ezequiel Godoy
+	Práctica Profesional II: Desarrollo de videojuegos II 
+	NoName (shooting gallery)
+	https://github.com/gytsss/Shooter
+
+Dario Nicolas Otranto Bavio
+	Práctica Profesional II: Desarrollo de videojuegos II 
+	DSM (Isaac)
+	https://github.com/Chesog/Desarollo_Tp_1
+
+Tomas Porte Petit
+	Práctica Profesional II: Desarrollo de videojuegos II 
+	Walter Duty (zombie shooter)
+	https://github.com/Okami115/WalterDuty
+
+Nicolas Ramos Marin
+	Práctica Profesional II: Desarrollo de videojuegos II 
+	Ragdoll Man (human fall flat)
+	https://github.com/nicorm2000/RAGDOLLMAN
+
+Mauricio Damian Salazar
+	Práctica Profesional II: Desarrollo de videojuegos II 
+	Leap Lash 2 (enter the gungeon)
+	https://github.com/Mauvemau/Unity3D_ToBeNamed
+	
+Facundo Santos
+	Práctica Profesional II: Desarrollo de videojuegos II 
+	Parkur Man (Platformer 3d)
+	https://github.com/fekox/Project-Parkour-Man
+
+
+Juan Bautista Castignani
+Martin Ezequiel Camacho
+Tupac Francisco Sierra
+Mauro Guillermo Torres Velasquez
+

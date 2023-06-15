@@ -2,10 +2,10 @@
 drive: 
 https://drive.google.com/drive/folders/1frtmSVa3J_pyJahsftpRV3X6qx3RyxC2?usp=sharing
 
-Continuar con el uso de interfaces
-Ver Bitwise ops.
-
+DONE Continuar con el uso de interfaces
+DONE Ver Bitwise ops.
 DONE Los que no estén con un proyecto en particular ver que hacer.
+DONE Bitwise operations
 
 https://github.com/federicoBarra/Lab_2023
 
@@ -22,7 +22,6 @@ Pausa en el Input Manager, nuevo
 Actions & Funcs
 LINQ
 LODs
-Bitwise operations
 BezierCurves / Splines
 AnimationEvents
 KISS
@@ -32,10 +31,22 @@ CHEATS
 Escenas autocorribles
 ParticleSystem desde codigo
 
+[Ejercicio]
+Tengo 2 clases
+Player y Enemy
+
+Player debe poder pegar con cualquier boton y Enemy y solo Enemy recibirá daño.
+Las clases Player y Enemy no se conocen.
+
+No se pueden usar tags
+No se puede usar ontrigger oncollition y esas cosas.
+
+hero task: El player pega en un radio y angulo definido en el editor
+
+[Alumnos]
 
 Práctica Profesional II: Desarrollo de videojuegos II 
 X = Ver que proyecto hacer
-
 
 Posibilidades:
 siempre 3D
@@ -44,33 +55,41 @@ FPS basico
 Shooting Gallery
 Naves (1942)
 Bomberman
-Mega Man Battle Network
-Zelda !!BASICO!!
+NO Mega Man Battle Network
+NO Zelda !!BASICO!! MEGA ACOTADO, va
 
 Juan Pablo Campos
 	No Unity
 	X
+	
 Ivan Abraham
 	No Unity
 	X
 
 Daniela Leticia Gonzalez
 	NO Desarrolo 2
+	Poco Unity
 	X
+	Bomberman
+	
 Lucio Molina Jalabert
 	NO Desarrolo 2
+	Cero Unity
 	X
+	Bomberman
+	
 Jose Altamirano
 	Programacion 2
 	X
+	Naves
+	
 Joan Manuel Rivas Cepeda
-	Prog 1
-	DB
-	Graphics
-	X
+	Naves
+	
 Estanislao Sala Barraquero
 	Programacion 2 
 	X
+	Shooting Gallery
 	
 Manuel D Antuono
 	Práctica Profesional II: Desarrollo de videojuegos II 
@@ -134,14 +153,3 @@ Martin Ezequiel Camacho
 Tupac Francisco Sierra
 Mauro Guillermo Torres Velasquez
 
-[Ejercicio]
-Tengo 2 clases
-Player y Enemy
-
-Player debe poder pegar con cualquier boton y Enemy y solo Enemy recibirá daño.
-Las clases Player y Enemy no se conocen.
-
-No se pueden usar tags
-No se puede usar ontrigger oncollition y esas cosas.
-
-hero task: El player pega en un radio y angulo definido en el editor
