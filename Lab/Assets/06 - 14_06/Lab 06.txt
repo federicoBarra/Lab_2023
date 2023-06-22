@@ -1,13 +1,9 @@
 https://github.com/federicoBarra/Lab_2023
 
-están usando URP o que?
-en que branch están en sus repos?
-
 Extreme make over
 DONE UI
-Post-Process
-
-Nacho - Metele algúna cosa (planeta, nave gigante que no podes atacar, asteroides, meteoritos) en el medio del path para que se sienta un poco más el desplazamiento de la nave.
+DONE Canvas, world space.
+DONE UI RectTranform
 
 Cuando clase tiene más 5 niveles de padres hay algo mal.
 https://opengameart.org/
@@ -22,8 +18,6 @@ Assembly Definitions.
 Observer Pattern
 Animator Override Controller
 Dictionaries
-Canvas, world space.
-UI RectTranform
 Nav Mesh
 Proc gen
 Load Additive
@@ -36,23 +30,10 @@ BezierCurves / Splines
 AnimationEvents
 KISS
 Builds
-MonoSingleton
 CHEATS
 Escenas autocorribles
 ParticleSystem desde codigo
 Strategy Pattern
-
-Dario 
-	Ver collisiones locas
-
-
-[Coletta project]
-Orden en las escenas
-Orden del proyecto
-Post-Process
-Scroll_Track (naming conventions, )
-Enemy que ataca a otro Enemy
-Vieron FSM?
 
 [Alumnos]
 

@@ -1,43 +1,45 @@
 https://github.com/federicoBarra/Lab_2023
 
-Diferencia entre OverlapSphereNonAlloc
-	y 				sPhereCastNonalloc
+[HOY]
+están usando URP o que?
+en que branch están en sus repos?
 
-Buscar Wheel Collider explination
+Como Pasar Legacy a URP
 
-[Primero que nada]
-Unity abierto desde vamos.
+DONE Load Additive
+DONE MonoSingleton
+DONE Post-Process
 
-Preguntas ejercicio clase anterior
-Para los que vieron Unity, poner en contacto con gestione educativa.
-	Bajar Unity.
+Nacho - Metele algúna cosa (planeta, nave gigante que no podes atacar, asteroides, meteoritos) en el medio del path para que se sienta un poco más el desplazamiento de la nave.
+
+[Ejercicio Proxima]
+ver Post-Process
+ver como pasar cosas que tienen que ser eventos a eventos.
+
+[Coletta project]
+DONE Orden en las escenas
+DONE WinCondition - Uso de eventos.
+DONE ShellLogic y EnemyShellLogic
+
+Orden del proyecto
+Scroll_Track (naming conventions, )
+Enemy que ataca a otro Enemy
+PlayerShoot => weapons
+
+[Nicolas Marin]
+Proxima clase.
 
 
-make your code usable before you try to make it reusable
-premature reutilization is the root of all evil
-
-casey muratori (SOLID)
-
-[Ejercicio]
-Tengo 2 clases
-Player y Enemy
-
-Player debe poder pegar con cualquier boton y Enemy y solo Enemy recibirá daño.
-Las clases Player y Enemy no se conocen.
-
-No se pueden usar tags
-No se puede usar ontrigger oncollition y esas cosas.
-
-hero task: El player pega en un radio y angulo definido en el editor
-
+[Dario project]
+Ver collisiones locas
 
 [PARA VER]
+Assembly Definitions.
+Observer Pattern
+Animator Override Controller
 Dictionaries
-Canvas, world space.
-UI RectTranform
 Nav Mesh
 Proc gen
-Load Additive
 como manejar la pausa
 Pausa en el Input Manager, nuevo
 Actions & Funcs
@@ -47,7 +49,6 @@ BezierCurves / Splines
 AnimationEvents
 KISS
 Builds
-MonoSingleton
 CHEATS
 Escenas autocorribles
 ParticleSystem desde codigo
