@@ -6,6 +6,11 @@ public class Player07 : MonoBehaviour
 {
 	public float speed = 10;
 
+	public void Move()
+	{
+
+	}
+
     // Start is called before the first frame update
     void Start()
     {

@@ -1,4 +1,4 @@
-using UnityEditor.ShaderGraph.Internal;
+using System;using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class Transitioner : MonoBehaviour
@@ -80,6 +80,8 @@ public class Transitioner : MonoBehaviour
 }
 
 
+
+
 /*
  public delegate void ActionDefinidaPorMi(Enemy_Health enemy);
 	
@@ -107,7 +109,7 @@ public class Transitioner : MonoBehaviour
 	{
 		Debug.Log("Metodo02");
 	}
- * */
+/**/
 
 
 

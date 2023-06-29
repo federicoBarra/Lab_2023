@@ -1,0 +1,57 @@
+https://github.com/federicoBarra/Lab_2023
+
+[HOY]
+Como fue el segundo parcial?
+Alguien no entregó?
+Siguen con parciales?
+De los que no están cursando desarrollo 2, repo.
+Pasaron a URP los que no estaban?
+
+DONE FSM
+
+[Ejercicio Proxima]
+ver Post-Process
+ver como pasar cosas que tienen que ser eventos a eventos.
+
+[Coletta project]
+DONE Orden en las escenas
+DONE WinCondition - Uso de eventos.
+DONE ShellLogic y EnemyShellLogic
+DONE Scroll_Track (naming conventions, )
+DONE Enemy que ataca a otro Enemy
+DONE PlayerShoot => weapons
+Orden del proyecto
+
+[Nicolas Marin]
+ABUSO DE ref!
+ABUSO DE COMPONENTES!
+Estructura de carpetas del proyecto.
+Nombrado carpetas y escenas
+Ingame menu?
+gameplay?
+Carpeta Assets dentro de Assets, ver carpetas reservadas Unity
+
+
+[PARA VER]
+Enums y IDs
+Assembly Definitions.
+Observer Pattern
+Animator Override Controller
+Dictionaries
+Nav Mesh
+Proc gen
+como manejar la pausa
+Pausa en el Input Manager, nuevo
+Actions & Funcs
+LINQ
+LODs
+BezierCurves / Splines
+AnimationEvents
+KISS
+Builds
+CHEATS
+Escenas autocorribles
+ParticleSystem desde codigo
+Strategy Pattern
+
+
