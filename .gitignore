@@ -73,3 +73,4 @@ crashlytics-build.properties
 Lab/Library/
 Lab/Temp/
 Lab/Logs/
+Lab/obj/

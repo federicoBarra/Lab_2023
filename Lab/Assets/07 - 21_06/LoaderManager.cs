@@ -3,6 +3,20 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+public class CamaeraManager :MonoBehaviourSingleton<CamaeraManager>
+{
+	void ProcessInputContrller()
+	{
+
+	}
+
+	void ProcessInputMouseAndKeyboard()
+	{
+
+	}
+}
+
+
 public class LoaderManager : MonoBehaviourSingleton<LoaderManager>
 {
 	public float loadingProgress;

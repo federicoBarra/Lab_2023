@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae5c8d9975daf648ab900eda8ca1289, type: 3}
+  m_Name: Skeleton
+  m_EditorClassIdentifier: 
+  nombre: Skelewton
+  factionConfig: {fileID: 11400000, guid: 9b58603ab1186f34fb8ce9fbb7fa5904, type: 2}

@@ -1,0 +1,47 @@
+https://github.com/federicoBarra/Lab_2023
+
+[HOY]
+DONE Corutinas
+Enums y IDs
+
+https://sourcemaking.com/design_patterns#:~:text=Design%20patterns%20provide%20general%20solutions,understood%20names%20for%20software%20interactions.
+
+Patterns 
+Strategy
+
+
+
+BUG Camara - Pasar documentacion
+
+
+[Nicolas Marin]
+ABUSO DE ref!
+ABUSO DE COMPONENTES!
+Estructura de carpetas del proyecto.
+Nombrado carpetas y escenas
+Ingame menu?
+gameplay?
+Carpeta Assets dentro de Assets, ver carpetas reservadas Unity
+
+
+[PARA VER]
+Assembly Definitions.
+Observer Pattern
+Animator Override Controller
+Dictionaries
+Nav Mesh
+Proc gen
+como manejar la pausa
+Pausa en el Input Manager, nuevo
+Actions & Funcs
+LINQ
+LODs
+BezierCurves / Splines
+AnimationEvents
+KISS
+Builds
+CHEATS
+Escenas autocorribles
+ParticleSystem desde codigo
+Strategy Pattern
+
