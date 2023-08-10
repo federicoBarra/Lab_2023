@@ -3,14 +3,9 @@ https://github.com/federicoBarra/Lab_2023
 [HOY]
 DONE Corutinas
 Enums y IDs
-
 https://sourcemaking.com/design_patterns#:~:text=Design%20patterns%20provide%20general%20solutions,understood%20names%20for%20software%20interactions.
-
 Patterns 
 Strategy
-
-
-
 BUG Camara - Pasar documentacion
 
 

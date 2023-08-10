@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Tito
   m_EditorClassIdentifier: 
   nombre: Mar
-  factionConfig: {fileID: 11400000, guid: b37b38fda6a1bb34382b08bd16f675bc, type: 2}
+  factionConfig: {fileID: 11400000, guid: dfb089472b78fc1498649e374dabcc5f, type: 2}

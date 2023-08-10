@@ -1,0 +1,132 @@
+federico.n.barra @gmail
+
+[HOY]
+DEFINIR IDEA LO ANTES POSIBLE!
+Lider - Decision final de Design. Democraticamente.
+La 10.
+
+Como laburar con Artistas!
+Tamaño de texturas.
+Decidir Aspect ratio.
+Scala de los objetos 3d.
+
+Comunicacion 50%
+
+Saber lo que uno está pidiendo.
+Reuniones - Como y cuando
+Git y artistas. LFS.
+No forzar al resto.
+
+Proyectos
+
+Facundo Santos
+Nicolas Ramos Marin
+	Brotato
+	subway surfers
+	Artistas:
+	2 - 2D y 3D bien
+	Posibles problemas:
+		comunicacion
+
+Enzo Coletta
+Ignacio Arrastua
+	PAppers please
+	Assemble with care
+	Artistas:
+	2 - 2D y 3D 
+	Posibles problemas:
+		Estilo
+		Implementaciones de Unity recae en los programadores.
+		Scope quizás chico.
+
+Tomas Porte Petit
+Un X
+	Subway surfers
+	Artistas:
+	3 - 3D 
+	Posibles problemas:
+		Resto del equipo.
+		Quizás scope chico.
+
+Santiago Barra (Atenti) - 1 semanita de prueba.
+	Walking simulator?
+	Point and click
+	Visual novel.
+	Artistas:
+	1 - 2D y 3D 
+	1 - 3D
+	2 - 2D
+	Posibles problemas:
+		1 solo programador
+		4 artistas.
+		Horarios diferentes.
+		expectativas.
+		Choque de liderazgo.
+		
+Dario Nicolas Otranto Bavio
+Tobias Ezequiel Godoy
+	young souls
+	Artistas:
+	1 - 3D piola
+	2 - 2D
+	Posibles problemas:
+		Game Feel
+		No se conoce el grupo.
+		
+
+Mauricio Damian Salazar
+
+
+[PARA VER]
+Integración con Google drive. 
+
+Assembly Definitions.
+Observer Pattern
+Animator Override Controller
+Dictionaries
+Nav Mesh
+Proc gen
+Pausa en el Input Manager, nuevo
+Actions & Funcs
+LINQ
+LODs
+BezierCurves / Splines
+AnimationEvents
+Builds
+CHEATS
+Escenas autocorribles
+ParticleSystem desde codigo
+Strategy Pattern
+
+[VISTO]
+DONE Summaries, comment data.
+DONE Doc generation.
+DONE XML, JSON, YAML
+DONE Custom editor
+DONE #if def
+DONE Claro donde empieza la cosa en las escenas
+DONE Early exit
+DONE UI 9grid en unity
+DONE Coding Standards
+Properties
+DONE Continuar con el uso de interfaces
+DONE Ver Bitwise ops.
+DONE Los que no estén con un proyecto en particular ver que hacer.
+DONE como manejar la pausa
+DONE Bitwise operations
+DONE UI
+DONE Canvas, world space.
+DONE UI RectTranform
+DONE OverlapSphereNonAlloc
+DONE make your code usable before you try to make it reusable
+DONE premature reutilization is the root of all evil
+DONE KISS
+DONE Load Additive
+DONE MonoSingleton
+DONE Post-Process
+DONE Orden en las escenas
+DONE WinCondition - Uso de eventos.
+DONE Interfaces
+DONE Corutinas
+DONE Enums y IDs
+DONE Patterns 

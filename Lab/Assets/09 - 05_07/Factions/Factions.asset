@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd316a6c3f9563a4384d30c7d5188ccc, type: 3}
   m_Name: Factions
   m_EditorClassIdentifier: 
-  availableFactions: []
+  availableFactions:
+  - {fileID: 11400000, guid: a8acd32979612f8419ae524d8933fa30, type: 2}
+  - {fileID: 11400000, guid: b37b38fda6a1bb34382b08bd16f675bc, type: 2}
+  - {fileID: 11400000, guid: dfb089472b78fc1498649e374dabcc5f, type: 2}
+  - {fileID: 11400000, guid: 9b58603ab1186f34fb8ce9fbb7fa5904, type: 2}
+  - {fileID: 11400000, guid: 1e624763323a9d24694f7b9e7605a046, type: 2}

@@ -12,3 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d19126a70ef7dd143aa656c8ac3aedf2, type: 3}
   m_Name: Faction - Humano
   m_EditorClassIdentifier: 
+  displayName: Humano
+  description: "La descalkj sa lkn dfg sdfh sfglk\xF1j dsfdgfh\ndf g\xF1lkj sfhsdfgh
+    sf\n"
+  enemyFactions:
+  - {fileID: 11400000, guid: b37b38fda6a1bb34382b08bd16f675bc, type: 2}
+  - {fileID: 11400000, guid: a8acd32979612f8419ae524d8933fa30, type: 2}
+  - {fileID: 11400000, guid: 9b58603ab1186f34fb8ce9fbb7fa5904, type: 2}
