@@ -1,0 +1,215 @@
+[HOY]
+Estanislao - Repo. Shooting Gallery. Proxima clase.
+Lucio
+
+como vienen los protos
+
+
+[HOY]
+como fue la movida?
+Idea definida?
+Proto?
+Problemas?
+Laburo para la proxima semana?
+Apreciaciones?
+
+Git:
+Main branch - Sin Showstoppers.
+Escenas Diferentes.
+Mucho laburo de Prefabs.
+
+Prioridades
+
+Mentir
+
+Estipular tiempo de testeo para features.
+Buscar formas diferentes de hacer ciertas cosas (en base al tiempo que lleve)
+Planning poker
+
+Prototipar lo que no está claro.
+Iteración
+
+NO ESPERAR MUCHO ANTES DE EMPEZAR A PROTOTIPAR!
+No ser cabeza dura con una idea.
+
+Update controlado por fuera.
+
+Lo perfecto es enemigo de lo bueno!
+
+
+[Ejercicio]
+Hacer una lista de las features que se requieren para hacer el mario:
+
+Teniendo el arte bien.
+Teniendo las otras escenas.
+
+- Game Manager
+	- Loader Manager
+		- main menu,  
+			10 Diseño
+				5 art
+					3 Programacion
+- end screen, 
+- load screen, 
+- game screen, 
+- credits
+- moviemiento horizontal/vertical - Jump Movimiento, salto, ataque, correr, hitbox,muerte, recibir poder, recibir daño, hacer daño, vidas internas max = 3
+- colision enemigo/moneda/bloques
+- muerte
+- enemigos
+- Animation
+- restart level
+- lives
+- coints / score
+- map
+- power ups Hongo, agrega una vida interna. Flor: Agrega la posibilidad de atacar, da 2 vidas internas Estrella: Da invencibilidad
+- Destroy elements
+- Calcular timer
+
+[Grupos desarrollo 3]
+Facundo Santos
+Nicolas Ramos Marin (capitan)
+	Ak xolotl - Survival, bullet hell.
+	Rondas, 3 systema de mejoras. (visual)
+	1 player - 5 armas
+	1 enemy -> 5
+	1 terreno.
+	Artistas:
+	2 - 2D y 3D bien
+		
+	Programacion:
+	Heavy SO use.
+	DOTs?
+	Flow fill.
+	
+	Comunicacion:
+		Medianamente fluida. Va mejorando.
+
+Enzo Coletta
+Ignacio Arrastua
+	Plant vs Zombies + Overcooked
+	1 solo nivel
+	
+	Artistas:
+	2 - 2D y 3D 
+	Posibles problemas:
+		Estilo
+		Implementaciones de Unity recae en los programadores.
+		Scope quizás chico.
+		
+	Comunicacion:
+		Camina
+
+	Prototipar YA!
+
+Tomas Porte Petit
+Un X
+	Subway surfers
+	Artistas:
+	3 - 3D 
+	Posibles problemas:
+		Resto del equipo.
+		Quizás scope chico.
+
+Santiago Barra (Atenti) - 1 semanita de prueba.
+	Clicker - cookie clicker, planta nuclear.
+	Artistas:
+	1 - 2D y 3D 
+	1 - 3D
+	2 - 2D
+	Posibles problemas:
+		1 solo programador
+		4 artistas.
+		Horarios diferentes.
+		expectativas.
+		Choque de liderazgo.
+	
+	Comunicacion:
+		
+	Prototipar:
+		Numeros grandes. Notacion cientifica
+		Saves
+		Time
+	
+Dario Nicolas Otranto Bavio
+Tobias Ezequiel Godoy
+	young souls
+	Artistas:
+	1 - 3D piola
+	2 - 2D
+	Posibles problemas:
+		Game Feel
+		No se conoce el grupo.
+
+Mauricio Damian Salazar
+
+
+[PARA VER]
+File handling
+Settings
+Strategy
+ConfigSingleton
+Integración con Google drive. 
+Animator Override Controller
+Assembly Definitions.
+Dictionaries
+Nav Mesh
+Proc gen
+Pausa en el Input Manager, nuevo
+Actions & Funcs
+LINQ
+LODs
+BezierCurves / Splines
+AnimationEvents
+Builds
+CHEATS
+Escenas autocorribles
+ParticleSystem desde codigo
+
+[VISTO]
+DONE Strategy Pattern
+DONE Observer Pattern
+DONE Desarrollo 3
+	DEFINIR IDEA LO ANTES POSIBLE!
+	Lider - Decision final de Design. Democraticamente.
+	La 10.
+	Como laburar con Artistas!
+	Tamaño de texturas.
+	Decidir Aspect ratio.
+	Scala de los objetos 3d.
+	Comunicacion 50%
+	Saber lo que uno está pidiendo.
+	Reuniones - Como y cuando
+	Git y artistas. LFS.
+	No forzar al resto.
+DONE Summaries, comment data.
+DONE Doc generation.
+DONE XML, JSON, YAML
+DONE Custom editor
+DONE #if def
+DONE Claro donde empieza la cosa en las escenas
+DONE Early exit
+DONE UI 9grid en unity
+DONE Coding Standards
+Properties
+DONE Continuar con el uso de interfaces
+DONE Ver Bitwise ops.
+DONE Los que no estén con un proyecto en particular ver que hacer.
+DONE como manejar la pausa
+DONE Bitwise operations
+DONE UI
+DONE Canvas, world space.
+DONE UI RectTranform
+DONE OverlapSphereNonAlloc
+DONE make your code usable before you try to make it reusable
+DONE premature reutilization is the root of all evil
+DONE KISS
+DONE Load Additive
+DONE MonoSingleton
+DONE Post-Process
+DONE Orden en las escenas
+DONE WinCondition - Uso de eventos.
+DONE Interfaces
+DONE Corutinas
+DONE Enums y IDs
+DONE Patterns 
