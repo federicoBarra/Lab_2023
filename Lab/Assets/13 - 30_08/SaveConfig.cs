@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Reflection;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
@@ -31,6 +33,88 @@ public class SaveConfig : ConfigSingleton<SaveConfig>
 			return currentSave;
 		}
 	}
+
+	void OnValidate()
+	{
+		Debug.Log("OnValidate");
+		var type = typeof(SaveStrategy);
+		var types = AppDomain.CurrentDomain.GetAssemblies()
+			.SelectMany(s => s.GetTypes())
+			.Where(p => type.IsAssignableFrom(p));
+
+		//PrintAssemblies();
+		//PrintAllAssemblyTypes();
+		//PrintTypesImplementingSaveStrategy()
+		//PrintClassInfo();
+
+		SaveStrategy ss = (SaveStrategy)Activator.CreateInstance(types.ToList()[2]);
+		Debug.Log("current playerName: " + ss.Load(saveFileName).playerName);
+	}
+
+	void PrintAssemblies()
+	{
+		Debug.Log("-------------------------------------------------------");
+		var types = AppDomain.CurrentDomain.GetAssemblies();
+		foreach (Assembly assembly in types)
+		{
+			Debug.Log("Assembly: " + assembly.FullName);
+		}
+	}
+
+	void PrintAllAssemblyTypes()
+	{
+		Debug.Log("-------------------------------------------------------");
+		var types = AppDomain.CurrentDomain.GetAssemblies();
+		List<Assembly> assemblies = types.ToList();
+		var assemblyTypes = assemblies[1].GetTypes();
+
+		int i = 0;
+		foreach (Type type in assemblyTypes)
+		{
+			Debug.Log("type: " + type.FullName);
+			i++;
+			if (i > 1000)
+				break;
+		}
+	}
+
+	void PrintTypesImplementingSaveStrategy()
+	{
+		Debug.Log("-------------------------------------------------------");
+		var type = typeof(SaveStrategy);
+		var types = AppDomain.CurrentDomain.GetAssemblies()
+			.SelectMany(s => s.GetTypes())
+			.Where(p => type.IsAssignableFrom(p));
+
+		foreach (Type strategy in types)
+		{
+			Debug.Log("type: " + strategy);
+		}
+	}
+
+	void PrintClassInfo()
+	{
+		Debug.Log("-------------------------------------------------------");
+
+		var type = typeof(SaveConfig);
+		var methods = type.GetRuntimeMethods();
+
+		foreach (MethodInfo info in methods)
+		{
+			string data = "Method: " + info.Name + " => params: ";
+			foreach (ParameterInfo parameter in info.GetParameters())
+			{
+				data += " p: " + parameter.Name + " - " + parameter.ParameterType.Name;
+			}
+			Debug.Log(data);
+		}
+		//OTRAS FORMAS DE ACCEDER
+		//Type type = assembly.GetType("MyNamespace.MyType");
+		//FieldInfo field = type.GetField("fieldName");
+		//PropertyInfo property = type.GetProperty("propertyName");
+		//MethodInfo method = type.GetMethod("methodName");
+	}
+
 
 	public void Save()
 	{
@@ -91,6 +175,22 @@ public class SaveConfig : ConfigSingleton<SaveConfig>
 		loadStrategy = _loadStrategy;
 	}
 
+	public List<string> StrategyTypes
+	{
+		get
+		{
+			var type = typeof(SaveStrategy);
+			var types = AppDomain.CurrentDomain.GetAssemblies()
+				.SelectMany(s => s.GetTypes())
+				.Where(p => type.IsAssignableFrom(p));
+			List<string> stringList = new List<string>();
+			foreach (Type strategy in types)
+			{
+				stringList.Add(strategy.Name);
+			}
+			return stringList;
+		}
+	}
 }
 
 [Serializable]
@@ -214,3 +314,4 @@ public class SaveSettingDataSOStrategy : SaveStrategy
 		return save;
 	}
 }
+
