@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/07 - 21_06/Level 02.unity
     guid: e8958718b7a8ca14580528084fd1b4b8
+  - enabled: 1
+    path: Assets/15 - 13_09/UI Stuff/15_MainMenu.unity
+    guid: 299ecccaaafecc54da9cff51a47faab9
+  - enabled: 1
+    path: Assets/15 - 13_09/UI Stuff/15_Game.unity
+    guid: 6a7149c436cfed14bad65d7916b6f9d8
+  - enabled: 1
+    path: Assets/15 - 13_09/UI Stuff/15_ResultScreen.unity
+    guid: 36a22ad825d972b489df113cb0b949ae
   m_configObjects: {}

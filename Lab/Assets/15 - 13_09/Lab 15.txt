@@ -1,0 +1,134 @@
+//Estanislao - Repo. Shooting Gallery. Proxima clase.
+Personaje moviendose
+Dispara balas,
+Colision de la bala con un raycast.
+les disparás se rotan en Z
+
+Suma puntaje. Contador de objetos disparados.
+
+[A Agregar]
+Diferentes hitboxes
+La idea es que se muevan y salgan del mapa
+
+Una vez que termine el tiempo => 
+	te muestra una pantalla de estadisticas y un boton, "Play Again" y "Go to Main menu"
+	
+Agregar un Main Menu
+	Play
+	Options
+	Exit game
+	
+
+
+
+
+
+
+
+
+
+
+
+
+[HOY]
+Misma version de Unity.
+Chimi - Game Feel.
+Antes del código está el juego
+Sonido - Audacity - freesound.org
+
+Juegos preferidos
+Que van a chorear de esos juegos - Lista
+
+Materiales Greyboxing.
+
+
+//Lucio
+
+Assembly Definitions.
+REFLECTION
+LINQ
+
+[Grupos desarrollo 3]
+
+{Facundo Santos - Nicolas Ramos Marin (capitan)}
+Drive:
+
+{Enzo Coletta - Ignacio Arrastua}
+
+{Tomas Porte Petit - Un X}
+Porque no URP?
+
+{Santiago Barra - Un X}
+	
+{Dario Nicolas Otranto Bavio (capitán) - Tobias Ezequiel Godoy}
+Drive:
+Agregar TMP al repo
+Porque no URP?
+
+
+	
+[PARA VER]
+Integración con Google drive. 
+Animator Override Controller
+Dictionaries
+Nav Mesh
+Proc gen
+Pausa en el Input Manager, nuevo
+Actions & Funcs
+LODs
+BezierCurves / Splines
+AnimationEvents
+Builds
+CHEATS
+Escenas autocorribles
+ParticleSystem desde codigo
+
+[VISTO]
+DONE ConfigSingleton
+DONE File handling
+DONE Strategy Pattern
+DONE Observer Pattern
+DONE Desarrollo 3
+	DEFINIR IDEA LO ANTES POSIBLE!
+	Lider - Decision final de Design. Democraticamente.
+	La 10.
+	Como laburar con Artistas!
+	Tamaño de texturas.
+	Decidir Aspect ratio.
+	Scala de los objetos 3d.
+	Comunicacion 50%
+	Saber lo que uno está pidiendo.
+	Reuniones - Como y cuando
+	Git y artistas. LFS.
+	No forzar al resto.
+DONE Summaries, comment data.
+DONE Doc generation.
+DONE XML, JSON, YAML
+DONE Custom editor
+DONE #if def
+DONE Claro donde empieza la cosa en las escenas
+DONE Early exit
+DONE UI 9grid en unity
+DONE Coding Standards
+Properties
+DONE Continuar con el uso de interfaces
+DONE Ver Bitwise ops.
+DONE Los que no estén con un proyecto en particular ver que hacer.
+DONE como manejar la pausa
+DONE Bitwise operations
+DONE UI
+DONE Canvas, world space.
+DONE UI RectTranform
+DONE OverlapSphereNonAlloc
+DONE make your code usable before you try to make it reusable
+DONE premature reutilization is the root of all evil
+DONE KISS
+DONE Load Additive
+DONE MonoSingleton
+DONE Post-Process
+DONE Orden en las escenas
+DONE WinCondition - Uso de eventos.
+DONE Interfaces
+DONE Corutinas
+DONE Enums y IDs
+DONE Patterns 
