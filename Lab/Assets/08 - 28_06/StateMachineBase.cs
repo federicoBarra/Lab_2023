@@ -2,7 +2,15 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateMachineBase : MonoBehaviour
+[Serializable]
+public class EntityData
+{
+	public int health = 100;
+	public int minHealth = 20;
+}
+
+
+public class StateMachineBase : MonoBehaviour // esto podria ser una clase Enemy
 {
 	public EntityData ed;
 
@@ -13,6 +21,7 @@ public class StateMachineBase : MonoBehaviour
 		fsm = new StateMachine();
 		fsm.AddState<IdleState>(new IdleState(fsm, ed));
 		fsm.AddState<MovingState>(new MovingState(fsm, ed, 17));
+		fsm.AddState<FlyingState>(new FlyingState(fsm, ed, 20));
 
 		fsm.ChangeState<IdleState>();
 	}
@@ -22,38 +31,6 @@ public class StateMachineBase : MonoBehaviour
     {
         fsm.Update();
     }
-}
-
-[Serializable]
-public class EntityData
-{
-	public int health = 100;
-	public int minHealth = 20;
-}
-
-public abstract class State
-{
-	protected StateMachine machine;
-	protected Dictionary<Type, Condition> conditions = new Dictionary<Type, Condition>();
-
-	protected State(StateMachine _machine)
-	{
-		machine = _machine;
-	}
-	public bool CheckCondition<T>() where T : Condition
-	{
-		bool ret = false;
-		Type conditionType = typeof(T);
-		if (conditions.TryGetValue(conditionType, out var condition))
-			ret = condition.Check();
-		else
-			Debug.LogError("Condition not found: " + conditionType.Name);
-
-		return ret;
-	}
-	public abstract void Enter();
-	public abstract void Update();
-	public abstract void Exit();
 }
 
 public abstract class EntityState :State
@@ -89,6 +66,7 @@ public class MovingState : EntityState
 	public float movingSpeed;
 	public MovingState(StateMachine _machine, EntityData _data, float _movingSpeed) : base(_machine, _data)
 	{
+		conditions.Add(typeof(LowHeathCondition), new LowHeathCondition(_data));
 		movingSpeed = _movingSpeed;
 	}
 
@@ -100,51 +78,6 @@ public class MovingState : EntityState
 	}
 
 	public override void Exit() { }
-}
-
-
-public class StateMachine
-{
-	private State currentState;
-	private Dictionary<Type, State> states;
-
-	public StateMachine()
-	{
-		states = new Dictionary<Type, State>();
-	}
-	public void AddState<T>(State state) where T : State
-	{
-		states.Add(typeof(T), state);
-	}
-
-	public void Update()
-	{
-		currentState?.Update();
-	}
-
-	public void ChangeState<T>() where T : State
-	{
-		currentState?.Exit();
-
-		Type nextStateType = typeof(T);
-		if (states.TryGetValue(nextStateType, out var state))
-		{
-			currentState = state;
-			currentState.Enter();
-
-			Debug.Log("Changing state to: " + nextStateType.Name);
-		}
-		else
-		{
-			Debug.LogError(nextStateType.Name + " : is not registered.");
-		}
-	}
-}
-
-
-public class Condition
-{
-	public virtual bool Check() => true;
 }
 
 public class LowHeathCondition : Condition

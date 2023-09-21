@@ -1,45 +1,52 @@
-//Estanislao - Repo. Shooting Gallery. Proxima clase.
-Personaje moviendose
-Dispara balas,
-Colision de la bala con un raycast.
-les disparás se rotan en Z
-
-Suma puntaje. Contador de objetos disparados.
-
-[A Agregar]
-Diferentes hitboxes
-La idea es que se muevan y salgan del mapa
-
-Una vez que termine el tiempo => 
-	te muestra una pantalla de estadisticas y un boton, "Play Again" y "Go to Main menu"
-	
-Agregar un Main Menu
-	Play
-	Options
-	Exit game
-	
-Agregar Menu de Pausa
-
-
-
-
-
-
-
-
-
-
-
 [HOY]
-Misma version de Unity.
+https://www.youtube.com/watch?v=Fy0aCDmgnxg
+https://www.youtube.com/watch?v=AJdEqssNZ-U
+
+Misma version de Unity. 2022.3.8f1
+
+{ANTES DEL CÓDIGO ESTÁ EL JUEGO !!!!!!!!!!!!!!!!!!!!!!!!}
+CHIMI
+Basic animations
+Sound
+Lower enemy health
+More Enemies
+Bigger bullets
+Muzzle flash
+Faster bullets
+Less accuracy
+Impact FX
+Enemy hitted Animation
+Knockback (player y enemy)
+Permanence (enemygos muertos, bullet shells)
+Camera Lerp
+Screen shake
+Diferentes armas.
+Explotions
+Animation curve
+
+
+traer preguntas de código.
+
+FSM
+
 Chimi - Game Feel.
-Antes del código está el juego
+
 Sonido - Audacity - freesound.org
 
 Juegos preferidos
 Que van a chorear de esos juegos - Lista
 
 Materiales Greyboxing.
+
+
+[TAREA PARA FEDE]
+Propuesta de cambio de código.
+Cinemachine
+Pool de objectos.
+Waves - 
+Pattern de diseño.
+Curva perfecta de tension y relax.
+
 
 
 //Lucio
