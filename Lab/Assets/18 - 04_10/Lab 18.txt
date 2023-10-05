@@ -1,0 +1,171 @@
+State Movement
+	Escucha WASD y F, SPACE
+
+	update()
+		player.move()
+
+State Attack
+	Escucha WASD
+	
+	update()
+		player.move()
+		attacking
+
+State Jump
+	NO escucha nada
+
+	update()
+		process falling down
+
+[Fede]
+Traer un ejemplo claro de uso de FSM.
+https://github.com/Chesog/Desarollo_Tp_1/tree/main
+
+[HOY]
+4 clases. 
+https://assetstore.unity.com/packages/tools/camera/milkshake-camera-shaker-165604
+Federico les va a traer la clase que viene una lista de pequeños features para tener hecho al final de la cursada de Laboratorio.
+
+Proxima Clase - Sr. Petit y Santi.
+Nico y Facu - Cantidad de entidades. Colisiones.
+
+BUG - Para todos, mantener el orden!
+
+Mirar los comits del otro.
+
+Difficulty (tension & relax) curves and stuff
+	http://whats-in-a-game.com/controlling-flow/
+	http://www.davetech.co.uk/difficultycurves
+Patterns de diseño.
+	https://sourcemaking.com/design_patterns/creational_patterns
+Cinemachine ?
+Waves ?
+//Lucio ?
+
+Assembly Definitions.
+REFLECTION
+LINQ
+Sonido - Audacity - freesound.org
+Materiales Greyboxing.
+Animator Override Controller
+Nav Mesh
+Chimi - Game Feel.
+
+traer preguntas de código.
+
+[Grupos desarrollo 3]
+
+{Facundo Santos - Nicolas Ramos Marin}
+Drive: https://drive.google.com/drive/u/1/folders/1gj4045r7KoY74VkDpm3oeqv-wENbPPMf
+
+{Enzo Coletta - Ignacio Arrastua}
+Quien hizo que?
+Nacho
+	cocina
+	Grid
+Enzo
+	Enemies
+	Turrets
+	Waves
+AreEnemiesAlive???? Noooooooouuuuuuuuuu!!!!!! usar eventos!
+Clase GoToGame ???
+public bool hasPotion() => _pickable is Potion; se estila hacer un getter para esto y ya
+Por que no usaron el character controller de unity?
+private IEnumerator CheckIfPlayerIsColliding(PlayerInteract playerInteract) - No entiendo esto
+Orden en el hirerachy
+No mezclar SOs con Scripts en Project
+Manejo de UI del GameManager?
+when en un switch es el horror más grande del universo csharpistico
+Cauldron: Yo separaría la UI del código que produce las cosas.
+
+{Tomas Porte Petit - Un X}
+Porque no URP?
+
+{Santiago Barra - Juan Rodriguez Gil}
+	
+{Dario Nicolas Otranto Bavio - Tobias Ezequiel Godoy}
+FSM del player
+JuanPablo les pidió que usen un state machine para el player?
+
+No entiendo como se juega, con que ataco?
+Quien hizo que?
+
+
+Orden en el Hierarchy
+Nombrado de cosas, PlayerComponent? TitoScene? prefab_button?
+Abuso de #region
+Ver Animator
+PlayerMeleAttackState uso de interfaces para el ataque
+Prefabs con cosas aplicadas a veces y a veces no
+Que viene a ser la carpeta test scripts?
+
+
+
+[PARA VER]
+Chimi - Game Feel.
+Sonido - Audacity - freesound.org
+Materiales Greyboxing.
+Animator Override Controller
+Nav Mesh
+Integración con Google drive. 
+Dictionaries
+Proc gen
+Pausa en el Input Manager, nuevo
+Actions & Funcs
+LODs
+BezierCurves / Splines
+AnimationEvents
+Builds
+CHEATS
+Escenas autocorribles
+ParticleSystem desde codigo
+
+[VISTO]
+DONE ConfigSingleton
+DONE File handling
+DONE Strategy Pattern
+DONE Observer Pattern
+DONE Desarrollo 3
+	DEFINIR IDEA LO ANTES POSIBLE!
+	Lider - Decision final de Design. Democraticamente.
+	La 10.
+	Como laburar con Artistas!
+	Tamaño de texturas.
+	Decidir Aspect ratio.
+	Scala de los objetos 3d.
+	Comunicacion 50%
+	Saber lo que uno está pidiendo.
+	Reuniones - Como y cuando
+	Git y artistas. LFS.
+	No forzar al resto.
+DONE Summaries, comment data.
+DONE Doc generation.
+DONE XML, JSON, YAML
+DONE Custom editor
+DONE #if def
+DONE Claro donde empieza la cosa en las escenas
+DONE Early exit
+DONE UI 9grid en unity
+DONE Coding Standards
+Properties
+DONE Continuar con el uso de interfaces
+DONE Ver Bitwise ops.
+DONE Los que no estén con un proyecto en particular ver que hacer.
+DONE como manejar la pausa
+DONE Bitwise operations
+DONE UI
+DONE Canvas, world space.
+DONE UI RectTranform
+DONE OverlapSphereNonAlloc
+DONE make your code usable before you try to make it reusable
+DONE premature reutilization is the root of all evil
+DONE KISS
+DONE Load Additive
+DONE MonoSingleton
+DONE Post-Process
+DONE Orden en las escenas
+DONE WinCondition - Uso de eventos.
+DONE Interfaces
+DONE Corutinas
+DONE Enums y IDs
+DONE Patterns 
