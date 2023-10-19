@@ -1,0 +1,363 @@
+[FEDE]
+Buscar Outline Shader. Probar los del asset store.
+Ver Compu vieja de 2005. No funca nada en la mía, ver que hacer con eso.
+
+[HOY]
+guarda con el foreach
+Profiler
+Pool
+
+{Analisis de proyectos}
+{Facundo Santos - Nicolas Ramos Marin}
+Proyecto. 
+	Carpetas con un solo archivo no tienen mucho sentido (Scripts)
+	Además, muchas carpetas que podrían entrar en Gameplay o algo así.
+	A veces se llaman Rounds, a veces Waves?
+	Carpeta Scriptable Objects => buscar otro nombre.
+	Carpeta Art => meter todo lo que es arte ahi.
+	
+En general.
+	La categorización de cosas tiene sentido cuando cada categoría no tiene 1 elemento adentro (HIerarchy en main menu es un ejemplo de eso.)
+	Uso de Early exit
+	Uso de interfaces.
+
+Código
+	CameraMovement - No moverla en el FixedUpdate.
+	ActiveDoor y DoorCollider, Porque no el mismo objeto si son lo mismo? 
+		Manejo de eventos! if (roundCounter.currentRound == roundCounter.maxRounds) en el update NO!
+
+	RoundCounter - A veces se llaman Rounds, a veces Waves? Maneja la UI tambien?
+	Referencias cruzadas entre Door y RoundCounter.
+	
+	Enemies. (VER IMPORTANTE ESTO)
+		Los nombres de los componentes dan a entender que son independiente de Enemies y Player y la implementacion interna accede directamente a particularidades del enemy y el player 
+		ej:
+			HealthSystem => referencia enemydata
+			ZoneTriggeredEffect => referencia EnemyDropData
+			EnemyBullet => referencia PlayerHealth, PlayerData, EnemyData
+		
+		HealthSystem => _dead = enemyData.isDead; ???
+			
+		EnemyBullet => pregunta playerData.isDashing??? nonono! estás metiendo funcionalidad del player en la bullet.
+	
+		manejo de nombres de animacion por string? walk = "Walk";
+	
+		ZoneTriggeredEffect ver.
+	
+	Weapon y Bullet
+		Porque bullet accede a WeaponData?
+	
+	UI
+		Abilities - Mezcla de UI con gameplay?
+		Referencias cruzadas entre la UI y el player (UpgradePlayer).
+	
+	Player
+		PlayerMovement referencia a ConveyorBelt?
+		PlayerHealth => if (isDead()) en el update.
+		playerTeleport? en el arma y en el movement?
+	
+	VER Manejo de los ScriptableObjects. PlayerData y WeaponData. PlayerData es muy grande tambien.
+	
+	Spawner adentro tiene info de enemies o sea que debería set EnemySpawner o cambiar la implementacion.
+	
+	ObjectPool => hablar un poco.
+	
+	Centralizar el manejo del input en el inputmanager.
+	
+	Con como están manejados los SOs, como harías los saves?
+	
+{Santiago Barra - Juan Rodriguez Gil}
+No se muy bien que se está usando y que no de los scripts.
+Quien hizo que?
+
+Achievements?
+Manejo de SOs
+Con como están manejados los SOs, como harías los saves?
+GameManager es medio un God Object.
+PlayerController => objeto mega gigante...
+Wallet
+ButtonsController => ver llamado al evento (porque me engancharía a un evento propio?)
+
+GameplayView => centraliza toda la responsabilidad del juego.
+El manejo de callbacks con MVC y callbacks fija el hecho de poder engancharse a un evento particular.
+
+{Tomas Porte Petit - Un X}
+Referencias cruzadas entra la UI y el gameplay general
+La info de los niveles están entremezclada en todo el juego.
+
+AnimationTrigger => Porqué tiene una referencia directa a OpenDoor?
+AnimatorSpeedReset => usar parametros en el animator para hacer esto.
+Nombres de Scripts como TitoScript o TitoComponent no van, buscar nombre mas claro.
+NO entiendo porque se llama Aestetic y no level. En todo caso el Level "tiene" una estetica.
+
+CheckColision
+	Usar interfaces para los objetos colisionables, no tags.
+
+UIManager
+	Están manejando la completitud del nivel desde la UI???
+
+PlayerMovement
+	Jump esquiva todo?
+	Generalizatr move (OnLeft, OnRight)
+	isCounting? uso de Properties=> CanDoAction
+	transform.position = Vector3.MoveTowards(transform.position, currentPos.position, newDistance);
+		newDistance supongo que es speed acá.
+	
+OpenDoor
+	pm.interaction += OpenningDoor; en OnTriggerStay???
+
+SpawnObstacles
+	Tiene todos los objetos posibles de todos los niveles.
+
+TerrainMovement Setea el score del player?
+
+no entieno muy bien si estás usando el InputManager o no.
+
+no se entiende muy bien que es del menu y que no.
+
+{TODOS}
+	[Project y CODE]
+	Orden en el proyecto. 
+	Orden en el Hierarchy.
+	Orden en la estructuracion de Escenas. (Boot, Main, Levels, etc)
+	Nombre claro de Scripts y clases, Variables, Carpetas, escenas, etc (Todo lo que tenga un nombre)
+	Separación clara de lo que es debug y testing de lo que no.
+	[GAME]
+	comunicar "cual" es el objetivo del juego.
+	comunicar "como" juego.
+	Loading Screen - [Clase 07]
+	Post Process - 
+	Screenshake
+	https://assetstore.unity.com/packages/tools/camera/milkshake-camera-shaker-165604
+	Que funcione en diferentes resoluciones. 16:9 16:10 (Canvas Scaler - Scale with Screen)
+	Pause Menu
+	Info en UI sobre el inicio del nivel, 3, 2, 1 GO.
+	Gameplay Loop funcional
+
+{Facundo Santos - Nicolas Ramos Marin}
+DONE BUG - cursor cambia constantemente entre cursor del juego y el de windows.
+DONE BUG - dash me permite meterme adentro de las colisiones.
+
+Ver Optimizacion del chase.
+Ver Optimizacion de GameObject.FindWithTag("Player");
+cache de diferentes cosas.
+Ver optimizacion del Update
+ver Profiler
+
+script Buttons NOOOOOOOOOOOO
+
+Informacion de UI sobre el inicio de una wave.
+Representar graficamente cual es el objetivo.
+Transiciones UI
+
+Complejización de los enemigos. Objeto visual separado
+Feedback de pegarle al enemigo (en el enemigo)
+Enemy knockback on hit
+FX en spawn del enemigo.
+Balas de los enemigos, que no desaparezcan así como así.
+Animacion por código y no animator.
+
+Feedback de recibir daño, en el player y en la UI
+Limite del arma de no poder disparar todo el tiempo. Alguna razón para no tener el click apretado todo el tiempo
+Armas con funcionalidad diferente.
+
+Bullet feedback on hit.
+
+Trails
+Definitivamente TRail en el dash del player.
+Fake shadows para las entidades.
+
+Arreglo de sombras por distancia.
+
+Colision de Capsula y no de cubo así me puedo deslizar por los bordes de las otras colisiones.
+Cuidado con tener varias colisiones en un mismo objeto.
+
+Minimap?
+
+Matcheo de la velocidad de la animacion con la velocidad del player
+
+Particulas de sangre
+particulas de shells. 
+Persistencia de todo, sangre, shells.
+
+Explosiones!
+
+Skill? matar a todos?
+
+{Tomas Porte Petit - Un X}
+BUG - Detectar mejor cuando pierdo
+Luces
+Animacion de luces
+Particulas que peguen con el piso.
+Algo que marque el final del nivel, mas allá de la UI de arriba
+Animacion de Post-Process.
+Laburar un toque mejor el salto.
+enemigos que se puedan mover de linea.
+Probar Fog
+Feedback de cuando puedo volver a saltar.
+Pisos falsos.
+que la velocidad aumente? UI de la velocidad.
+Sonido de miau al saltar
+Animacion de arriba y abajo a la camara
+
+{Santiago Barra - Juan Rodriguez Gil}
+Luces
+Animacion de luces
+Animacion de Post process.
+Algo que pase que haya que clickear (falla en el reactor o alguna cosa así)
+Feedback en el reactor al comprar algo
+Feedback de lo que puedo y no puedo comprar.
+Activables: 
+	Boost del reactor. Se puede recalentar.
+	Pensar otros.
+
+Particulas: Humo, rayitos, etc.
+Menu? como salgo?
+Nicefy de los numeros.
+Persistencia (Saves)
+Tipos (ingenieros) corriendo en el piso? 
+
+{Enzo Coletta - Ignacio Arrastua}
+Ver Graphic Performance
+El outline shader es muy pesado. ver shared material
+Mas permisiva la interaccion con objetos en el player.
+Particulas Cauldron, potions, player al empezar a caminar
+Feedback cuando esta hecha una potion.
+More to come next week.
+
+{Dario Nicolas Otranto Bavio - Tobias Ezequiel Godoy}
+BUG - sigue corriendo la animacion del player al soltar.
+ingame UI 
+Pedirle a los artistas animacion de correr y pegar.
+Feedback de pegarle al enemigo (en el enemigo)
+Feedback de enemigo al morir.
+Enemy knockback on hit
+Que no se superpongan tanto los enemigos.
+Attack hit feedback.
+Colision de Capsula y no de cubo así me puedo deslizar por los bordes de las otras colisiones.
+Collisiones con el nivel.
+FX en spawn del enemigo.
+Poder morir.
+Feedback de recibir daño, en el player y en la UI
+Sombras fake
+Boss
+
+Proxima Clase - Sr. Petit y Santi.
+Nico y Facu - Cantidad de entidades. Colisiones.
+Cinemachine ?
+
+Assembly Definitions.
+REFLECTION
+LINQ
+Sonido - Audacity - freesound.org
+Materiales Greyboxing.
+Animator Override Controller
+Nav Mesh
+Chimi - Game Feel.
+
+traer preguntas de código.
+
+[Grupos desarrollo 3]
+
+{Facundo Santos - Nicolas Ramos Marin}
+
+{Enzo Coletta - Ignacio Arrastua}
+
+{Tomas Porte Petit - Un X}
+Porque no URP?
+
+{Santiago Barra - Juan Rodriguez Gil}
+	
+{Dario Nicolas Otranto Bavio - Tobias Ezequiel Godoy}
+FSM del player
+No entiendo como se juega, con que ataco?
+Quien hizo que?
+Orden en el Hierarchy
+Nombrado de cosas, PlayerComponent? TitoScene? prefab_button?
+Abuso de #region
+Ver Animator
+PlayerMeleAttackState uso de interfaces para el ataque
+Prefabs con cosas aplicadas a veces y a veces no
+Que viene a ser la carpeta test scripts?
+
+
+
+[PARA VER]
+Chimi - Game Feel.
+Sonido - Audacity - freesound.org
+Materiales Greyboxing.
+Animator Override Controller
+Nav Mesh
+Integración con Google drive. 
+Dictionaries
+Proc gen
+Pausa en el Input Manager, nuevo
+Actions & Funcs
+LODs
+BezierCurves / Splines
+AnimationEvents
+Builds
+CHEATS
+Escenas autocorribles
+ParticleSystem desde codigo
+
+[VISTO]
+DONE Ver Optimizacion del chase.
+DONE Ver Optimizacion de GameObject.FindWithTag("Player");
+DONE cache de diferentes cosas.
+DONE Ver optimizacion del Update
+DONE Mirar los comits del otro.
+DONE Difficulty (tension & relax) curves and stuff
+DONE 	http://whats-in-a-game.com/controlling-flow/
+DONE 	http://www.davetech.co.uk/difficultycurves
+DONE Patterns de diseño.
+DONE 	https://sourcemaking.com/design_patterns/creational_patterns
+DONE BUG - Para todos, mantener el orden!
+DONE ConfigSingleton
+DONE File handling
+DONE Strategy Pattern
+DONE Observer Pattern
+DONE Desarrollo 3
+	DEFINIR IDEA LO ANTES POSIBLE!
+	Lider - Decision final de Design. Democraticamente.
+	La 10.
+	Como laburar con Artistas!
+	Tamaño de texturas.
+	Decidir Aspect ratio.
+	Scala de los objetos 3d.
+	Comunicacion 50%
+	Saber lo que uno está pidiendo.
+	Reuniones - Como y cuando
+	Git y artistas. LFS.
+	No forzar al resto.
+DONE Summaries, comment data.
+DONE Doc generation.
+DONE XML, JSON, YAML
+DONE Custom editor
+DONE #if def
+DONE Claro donde empieza la cosa en las escenas
+DONE Early exit
+DONE UI 9grid en unity
+DONE Coding Standards
+Properties
+DONE Continuar con el uso de interfaces
+DONE Ver Bitwise ops.
+DONE Los que no estén con un proyecto en particular ver que hacer.
+DONE como manejar la pausa
+DONE Bitwise operations
+DONE UI
+DONE Canvas, world space.
+DONE UI RectTranform
+DONE OverlapSphereNonAlloc
+DONE make your code usable before you try to make it reusable
+DONE premature reutilization is the root of all evil
+DONE KISS
+DONE Load Additive
+DONE MonoSingleton
+DONE Post-Process
+DONE Orden en las escenas
+DONE WinCondition - Uso de eventos.
+DONE Interfaces
+DONE Corutinas
+DONE Enums y IDs
+DONE Patterns 
